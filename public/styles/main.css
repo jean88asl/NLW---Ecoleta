@@ -1,0 +1,51 @@
+/* Entendendo o box-model = modelos de caixas
+
+Todas as caixas possuem:
+Largura, altura, espaçamentos, preenchimentos, bordas, cor, fundo...
+e a maneira que ela é disposta.
+
+Caixa do tipo block ocupam a linha inteira e a do tipo inline ocupa
+apenas o tamanho do elemento.
+
+Existem vários tipos de display, o que será utilizado no projeto será o flex.
+
+É interessante dispor os elementos em forma de cascata e na ordem que eles 
+aparecem
+*/
+
+/*Configurações globais*/
+:root {
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+/* O * indica que está sendo pegado os elementos da página e esses estão sendo zerandos o espaçamento 
+padrão entre eles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {    
+   font-family: Roboto, sans-serif;    
+}    
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+    color: var(--title-color);
+}
+
+
+
+
+

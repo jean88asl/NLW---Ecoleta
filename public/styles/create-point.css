@@ -1,0 +1,200 @@
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+
+    /*Em cima e embaixo a margem é 0 mas nas laterais a margem se ajusta de forma automática(por fora)*/
+    margin: 0 auto;
+}
+
+#page-create-point header {
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a {
+    color: var(--title-color);
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span {
+    margin-right: 16px;
+    background-image: url('../assets/arrow-left.svg');
+
+    display: flex;
+
+    width: 20px;
+    height: 24px;
+}    
+
+form {
+    background-color: white;
+    /*Preenchimento interno*/
+    padding: 64px;
+    /*Preenchimento externo*/
+    margin: 80px auto;
+    border-radius: 8px;
+
+    max-width: 720px;
+    box-sizing: border-box;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+
+    border: none;
+}
+
+form legend {
+    margin-bottom: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form legend span {
+   font-size: 14px; 
+   color: var(--title-color);
+}
+
+form .field {
+    /* Deixando os elementos da largura total*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;   
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+
+    border-radius: 8px;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+form .field-group .field + .field {
+   margin-left: 24px; 
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+
+    background-color: var(--primary-color);
+
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+
+    border: 0;
+    margin-top: 40px;
+
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+    border: 0;
+}
+
+.itens-grid {
+    /* Usando outro tipo de display para gerar linhas e colunas*/
+    display: grid;  
+    /* Isso significa que irão ter três colunas, pode ser em pixels ou fr, esse é mais dinâmico*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Espaçamento que pode ser aplicado no grid que é colocado em todos os lados do elemento*/  
+    gap: 16px;
+}
+
+.itens-grid li {
+    background-color: #f5f5f5;
+    /*Tirando as "bolinhas" do li*/
+    list-style: none;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+
+    height: 180px;
+
+    /*Os valores estão relacionados as horas do relógio altura- l direito - bottom - l esquerdo*/
+    padding: 32px 24px 16px;
+
+    /*Alinhando os itens do li*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    /*Fazendo que o cursor do mouse mude e o usuário perceba que o itens são selecionáveis*/
+    cursor: pointer;
+}
+
+.itens-grid li span {
+    margin-top: 12px;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--title-color)
+}
+
+.itens-grid li.selected {
+    background-color: #e1faec;
+    border: 2px solid #34cd59;
+}
+
+.itens-grid li img,
+.itens-grid li span {
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

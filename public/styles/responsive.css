@@ -1,0 +1,55 @@
+/* Aplicando responsividade. O Interessante aqui é verificar quando é necessário aplicar novos ajustes, conforme  
+sejam verificadas necessidades para isso*/
+
+@media (max-height: 760px) {
+    #page-home {        
+        background-position-y: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    #page-home {
+        /*Afastando a imagem para que ela desapareça da tela*/
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 15px;
+
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results .cards img {
+        height: 250px;
+    }
+
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field + .field {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 44vw;
+    }
+}
+
