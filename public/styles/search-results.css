@@ -1,4 +1,4 @@
-/*Essa ideia aplicada aqui é muito interessante pois meche com um eixo 
+/*Essa ideia aplicada aqui é muito interessante pois mexe com um eixo 
 que ainda não havia sido visto, que é o eixo z onde se trata da profundidade
 do elemento sobrepondo ele ou deixando ele por trás dos outros elementos*/
 
@@ -17,7 +17,7 @@ body::after {
     width: 90%;
     max-width: 1100px;
 
-    /*Em cima e em baixo a margem é 0 mas nas laterais a margem se ajusta de forma automática, por fora*/
+    /*Na parte supeior e em baixo a margem é 0 mas nas laterais a margem se ajusta de forma automática, por fora*/
     margin: 0 auto;
 }
 
